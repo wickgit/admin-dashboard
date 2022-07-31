@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace, sans-serif;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 200px 1fr;
+}
+
+.sidebar {
+    display: grid;
+    background-color: rgb(95, 95, 236);
+    grid-row: 1 / 3;
+    gap: 20px;
+    color: white;
+    font-size: 2.4rem;
+    font-weight: bold;
+    padding: 22px;
+}
+
+.logo {
+    font-size: 3.4rem;
+}
+
+.header {
+    background-color: white;
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+
+
+.header-top {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 6px 10px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+.account-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#avatar {
+    border-radius: 50%;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+input {
+    width: 45%;
+    height: 26px;
+    border-radius: 10px;
+    background-color: rgb(231, 231, 231);
+    border: none;
+    padding-left: 8px;
+}
+
+.header-bottom {
+    padding: 0.4rem 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.account {
+    display: flex;
+}
+
+.account div {
+    display: flex;
+    flex-direction: column;
+}
+
+account > div > p {
+    font-weight: bold;
+
+}
+
+.main {
+    background-color: rgb(206, 206, 206);
+}
