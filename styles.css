@@ -17,7 +17,7 @@ body {
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 200px 1fr;
+    grid-template-rows: auto 1fr;
 }
 
 .sidebar {
@@ -35,25 +35,29 @@ body {
     font-size: 3.4rem;
 }
 
+
+
+
+
+
 .header {
     background-color: white;
     display:grid;
     grid-template-rows: 1fr 1fr;
 }
 
-
-
 .header-top {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    padding: 6px 10px;
+    padding: 0.6rem 2rem;
 }
 
 .search {
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     gap: 18px;
+    padding-left: 0.8rem;
 }
 
 .account-menu {
@@ -72,8 +76,8 @@ body {
 }
 
 input {
-    width: 45%;
-    height: 26px;
+    width: 60%;
+    height: 3rem;
     border-radius: 10px;
     background-color: rgb(231, 231, 231);
     border: none;
@@ -81,25 +85,171 @@ input {
 }
 
 .header-bottom {
-    padding: 0.4rem 3rem;
+    padding: 0.8rem 4rem 1.6rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 .account {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1.6rem;
+    align-content: center;
 }
 
 .account div {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: auto auto;
+    align-items: center;
+    letter-spacing: -1px;
 }
 
-account > div > p {
+.account p:nth-child(1) {
     font-weight: bold;
-
+    font-size: 16px;
+    align-self: end;
 }
+
+.account p:nth-child(2) {
+    font-weight: 1000;
+    font-size: 20px;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    justify-items: center;
+}
+
+.options button {
+    width: 10rem;
+    height: 4.2rem;
+    background-color: rgb(95, 95, 236);
+    color: white;
+    border-radius: 17px;
+    border: none;
+    font-weight: bold;
+    font-size: 1.4em;
+    cursor: pointer;
+}
+
+.options button:hover {
+    border: 2px solid rgb(95, 95, 236);
+    background-color: white;
+    color: rgb(95, 95, 236);
+}
+
+
+
+
 
 .main {
-    background-color: rgb(206, 206, 206);
+    background-color: rgb(202, 209, 225);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 2.4rem;
+    gap: 2rem;
+}
+
+.projects {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.projects > span {
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2.2rem;
+}
+
+.card {
+    border-left: 8px solid rgb(235, 199, 0);
+    padding: 24px 16px;
+    min-height: 240px;
+    border-radius: 10px;
+    display:grid;
+    grid-template-rows: auto 1fr;
+    background-color: white;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.card h3 {
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: rgb(74, 74, 74);
+    margin-bottom: 8px;
+}
+
+.under-text {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.under-text div {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: end;
+    gap: 24px;
+}
+
+.main-sidebar {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.announcements-wrapper {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.announcements-wrapper span {
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.announcements {
+    background-color: white;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.announcements h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.announcements p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: rgb(74, 74, 74);
+}
+
+.announcements > div {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(74, 74, 74);
+}
+
+.announcements > div:last-child {
+    padding: 0;
+    margin: 0;
+    border: 0;
 }
